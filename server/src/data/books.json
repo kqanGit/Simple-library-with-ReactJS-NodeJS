@@ -1,0 +1,40 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "publishedYear": 1960
+    },
+    {
+      "id": 2,
+      "name": "1984",
+      "author": "George Orwell",
+      "publishedYear": 1949
+    },
+    {
+      "id": 3,
+      "name": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "publishedYear": 1925
+    },
+    {
+      "id": 4,
+      "name": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "publishedYear": 1813
+    },
+    {
+      "id": 5,
+      "name": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "publishedYear": 1951
+    },
+    {
+      "id": "1765213010246",
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "year": 1997
+    }
+  ]
+}

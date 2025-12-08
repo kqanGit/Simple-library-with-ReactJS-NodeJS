@@ -1,0 +1,83 @@
+{
+  "validBooks": [
+    {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "year": 1997
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "year": 1937
+    },
+    {
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "year": 1965
+    },
+    {
+      "title": "The Midnight Library",
+      "author": "Matt Haig",
+      "year": 2020
+    },
+    {
+      "title": "Moby-Dick",
+      "author": "Herman Melville",
+      "year": 1851
+    },
+    {
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "year": 1932
+    },
+    {
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "year": 1954
+    },
+    {
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "year": 1945
+    }
+  ],
+  "invalidBooks": [
+    {
+      "title": "",
+      "author": "Test Author",
+      "year": 2020,
+      "expectedError": "Title are required."
+    },
+    {
+      "title": "Future Book",
+      "author": "Test Author",
+      "year": 2030,
+      "expectedError": "Year must be a valid positive number not greater than the current year."
+    },
+    {
+      "title": "Negative Year Book",
+      "author": "Test Author",
+      "year": -100,
+      "expectedError": "Year must be a valid positive number not greater than the current year."
+    },
+    {
+      "title": "Zero Year Book",
+      "author": "Test Author",
+      "year": 0,
+      "expectedError": "Year must be a valid positive number not greater than the current year."
+    }
+  ],
+  "updateData": [
+    {
+      "title": "Updated Title",
+      "author": "Updated Author",
+      "year": 2000
+    },
+    {
+      "year": 1999
+    },
+    {
+      "title": "Only Title Changed"
+    }
+  ]
+}
