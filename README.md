@@ -2,18 +2,18 @@
 
 A full-stack CRUD application for managing books, built with
 **Node.js**, **Express**, and **React**, following a clean **3-Layer
-Architecture** consisting of:\
-- **Presentation Layer** (Client -- React)\
-- **Business Logic Layer** (Services)\
+Architecture** consisting of:
+- **Presentation Layer** (Client -- React)
+- **Business Logic Layer** (Services)
 - **Data Access Layer** (Repositories)
 
 ------------------------------------------------------------------------
 
 ## 📌 3-Layer Architecture Overview
 
-This architecture ensures:\
-✔ Clear separation of concerns\
-✔ Better maintainability and scalability\
+This architecture ensures:
+✔ Clear separation of concerns
+✔ Better maintainability and scalability
 ✔ Easy unit testing at each layer
 
 ------------------------------------------------------------------------
@@ -22,30 +22,30 @@ This architecture ensures:\
 
 ### 🔶 1. Presentation Layer (Client -- React)
 
-**Directory:** `client/`\
-**Responsibilities:** - Render UI\
-- Communicate with backend (Axios, React Router loaders/actions)\
-- Handle user interactions\
+**Directory:** `client/`
+**Responsibilities:** - Render UI
+- Communicate with backend (Axios, React Router loaders/actions)
+- Handle user interactions
 - Implement navigation
 
 ------------------------------------------------------------------------
 
 ### 🔶 2. Business Logic Layer -- BLL (Server Services)
 
-**Directory:** `server/src/services/`\
-**Responsibilities:** - Validate input data\
-- Apply business rules\
-- Handle domain logic\
-- Call the Repository layer for data access\
+**Directory:** `server/src/services/`
+**Responsibilities:** - Validate input data
+- Apply business rules
+- Handle domain logic
+- Call the Repository layer for data access
 - Does **not** interact directly with JSON/files
 
 ------------------------------------------------------------------------
 
 ### 🔶 3. Data Access Layer -- DAL (Server Repositories)
 
-**Directory:** `server/src/repositories/`\
-**Responsibilities:** - Directly access and manipulate JSON data\
-- Implement CRUD operations\
+**Directory:** `server/src/repositories/`
+**Responsibilities:** - Directly access and manipulate JSON data
+- Implement CRUD operations
 - Contain no business logic
 
 ------------------------------------------------------------------------
@@ -82,17 +82,17 @@ This architecture ensures:\
 
 ## Backend
 
--   Node.js v24.9.0\
--   Express.js\
--   CORS\
+-   Node.js v24.9.0
+-   Express.js
+-   CORS
 -   JSON File Storage
 
 ## Frontend
 
--   React 18\
--   Vite\
--   React Router v6 (loaders + actions)\
--   Axios\
+-   React 18
+-   Vite
+-   React Router v6 (loaders + actions)
+-   Axios
 -   Tailwind CSS
 
 ------------------------------------------------------------------------
@@ -208,9 +208,9 @@ Client runs at: `http://localhost:5173`
 
 ### Book Creation / Update
 
--   `title`: required, non-empty\
--   `author`: required\
--   `year`: must be \> 0 and ≤ current year\
+-   `title`: required, non-empty
+-   `author`: required
+-   `year`: must be \> 0 and ≤ current year
 -   Title must be **unique** (case-insensitive)
 
 ------------------------------------------------------------------------
@@ -219,22 +219,22 @@ Client runs at: `http://localhost:5173`
 
 ### Backend
 
--   Try/catch in controllers\
+-   Try/catch in controllers
 -   Correct HTTP status codes
 
 ### Frontend
 
--   Errors shown using `useActionData()`\
+-   Errors shown using `useActionData()`
 -   Optimistic UI for delete operations
 
 ------------------------------------------------------------------------
 
 # 🎯 Highlights
 
--   Clean 3-layer architecture\
--   React Router Data APIs\
--   Fully structured backend\
--   Professional, maintainable design\
+-   Clean 3-layer architecture
+-   React Router Data APIs
+-   Fully structured backend
+-   Professional, maintainable design
 -   Complete CRUD system
 
 ------------------------------------------------------------------------
