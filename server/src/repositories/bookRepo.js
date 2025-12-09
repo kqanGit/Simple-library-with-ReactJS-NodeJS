@@ -14,7 +14,9 @@ const writeData = (data) => {
 
 const bookRepo = {
   getAll: () => {
-    return readData();
+    const books = readData();
+    console.log(books);
+    return books;
   },
   getById: (id) => {
     const books = readData();

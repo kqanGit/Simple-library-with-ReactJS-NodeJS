@@ -1,8 +1,13 @@
 const express = require("express");
+const cors = require("cors"); 
 const bookRoutes = require("./src/routes/bookRoutes");
+
 
 const app = express();
 const PORT = 3000;
+
+// Enable CORS
+app.use(cors());
 
 // Middleware
 app.use(express.json());

@@ -11,7 +11,14 @@ const bookService = {
         if (book.year && (typeof book.year !== "number" || book.year <= 0 || book.year > new Date().getFullYear())) {
             throw new Error("Year must be a valid positive number not greater than the current year.");
         }
+        const books = bookRepo.getAll();
+        for (const b of books) {
+            if (b.title === book.title) {
+                throw new Error("A book with the same title already exists.");
+            }
+        }
         bookRepo.create(book);
+        return book;
     },
     updateBook: (id, updatedBook) => {
         for (const key in updatedBook) {
