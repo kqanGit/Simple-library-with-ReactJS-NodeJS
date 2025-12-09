@@ -3,6 +3,9 @@ const bookService = {
     getAllBooks: () => {
         return bookRepo.getAll();
     },
+    getBookById: (id) => {
+        return bookRepo.getById(id);
+    },
     createBook: (book) => {
         // console.log(book);
         if (!book.title.trim()) {

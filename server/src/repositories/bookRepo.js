@@ -15,12 +15,13 @@ const writeData = (data) => {
 const bookRepo = {
   getAll: () => {
     const books = readData();
-    console.log(books);
+    // console.log(books);
     return books;
   },
   getById: (id) => {
+    console.log("Getting book by ID:", id);
     const books = readData();
-    return books.find((book) => book.id === id);
+    return books.find((book) => book.id == id);
   },
   create: (book) => {
     const books = readData();
