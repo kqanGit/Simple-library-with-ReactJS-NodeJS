@@ -19,7 +19,7 @@ const bookRepo = {
     return books;
   },
   getById: (id) => {
-    console.log("Getting book by ID:", id);
+    // console.log("Getting book by ID:", id);
     const books = readData();
     return books.find((book) => book.id == id);
   },
@@ -33,7 +33,7 @@ const bookRepo = {
   },
   update: (id, updatedBook) => {
     const books = readData();
-    const index = books.findIndex((book) => book.id === id);
+    const index = books.findIndex((book) => book.id == id);
     if (index === -1) {
       return null;
     }
@@ -43,7 +43,7 @@ const bookRepo = {
   },
   deleteById: (id) => {
     const books = readData();
-    const index = books.findIndex((book) => book.id === id);
+    const index = books.findIndex((book) => book.id == id);
     if (index === -1) {
       return false;
     }

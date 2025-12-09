@@ -4,7 +4,10 @@ const bookService = {
         return bookRepo.getAll();
     },
     getBookById: (id) => {
-        return bookRepo.getById(id);
+        const res = bookRepo.getById(id);
+        console.log(res);
+        console.log('test');
+        return res;
     },
     createBook: (book) => {
         // console.log(book);

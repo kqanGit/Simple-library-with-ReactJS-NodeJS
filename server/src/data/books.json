@@ -2,45 +2,33 @@
   "books": [
     {
       "id": 1,
-      "title": "To Kill a Mockingbird",
-      "author": "Harper Lee",
-      "publishedYear": 1960
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "year": 2008
     },
     {
       "id": 2,
-      "title": "1984",
-      "author": "George Orwell",
-      "publishedYear": 1949
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt, David Thomas",
+      "year": 1999
     },
     {
       "id": 3,
-      "title": "The Great Gatsby",
-      "author": "F. Scott Fitzgerald",
-      "publishedYear": 1925
+      "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+      "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+      "year": 1994
     },
     {
       "id": 4,
-      "title": "Pride and Prejudice",
-      "author": "Jane Austen",
-      "publishedYear": 1813
+      "title": "Refactoring: Improving the Design of Existing Code",
+      "author": "Martin Fowler",
+      "year": 1999
     },
     {
       "id": 5,
-      "title": "The Catcher in the Rye",
-      "author": "J.D. Salinger",
-      "publishedYear": 1951
-    },
-    {
-      "id": "1765266410341",
-      "title": "Doraemon",
-      "author": "Fujiko",
-      "year": 1956
-    },
-    {
-      "id": "1765269793358",
-      "title": "The Midnight Library",
-      "author": "Matt Haig",
-      "year": 2020
+      "title": "Introduction to Algorithms",
+      "author": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein",
+      "year": 2009
     }
   ]
 }
