@@ -44,7 +44,7 @@ export async function booksAction({ request }) {
     if (intent === "delete") {
       const id = formData.get("id");
       await axios.delete(`${API_URL}/books/${id}`);
-
+      console.log('redirecting after delete');
 
       return redirect("/");
     }
